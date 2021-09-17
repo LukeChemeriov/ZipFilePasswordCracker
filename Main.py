@@ -4,7 +4,9 @@ import zipfile
 
 count = 1
 
-with open('darkweb2017-top10000.txt','rb') as text:
+print("Enter name of zip file:")
+name = input()
+with open('passwords.txt','rb') as text:
     for entry in text.readlines():
         password = entry.strip()
         try:
