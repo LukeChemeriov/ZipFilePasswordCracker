@@ -38,5 +38,5 @@ else:
     if (confirmyn == "y"):
         testPassword("passwords2.txt")
     else:
-        exit/(-1)
+        exit(-1)
        
