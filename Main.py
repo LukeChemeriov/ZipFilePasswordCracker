@@ -7,7 +7,7 @@ count = 1
 print("Enter name of zip file (include zip extension):")
 name = input()
 def testPassword(passwordlist, filename):
-    with open('passwords.txt','rb') as text:
+    with open(passwordlist,'rb') as text:
          for entry in text.readlines():
             password = entry.strip()
             try:
@@ -29,14 +29,14 @@ def testPassword(passwordlist, filename):
                 count += 1
                 pass
                 cracked = false
-testPassword(passwords.txt)
+testPassword("passwords.txt")
 if (cracked == true):
     exit(0)
 else:
     print("Password could not be found. Do you wish to try again with a different dictionary?")
     confirmyn = input().lower()
     if (confirmyn == "y"):
-        testPassword(passwords2.txt)
+        testPassword("passwords2.txt")
     else:
         exit/(-1)
        
